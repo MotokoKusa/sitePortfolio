@@ -1,0 +1,7 @@
+.mainPage {
+  padding-top: 7rem;
+  background: var(--color-bg-1);
+  @include _768 {
+    padding-top: 9rem;
+  }
+}

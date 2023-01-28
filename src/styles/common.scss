@@ -1,0 +1,142 @@
+:root {
+  --color-bg-1: #000000;
+  --color-bg-2: #111111;
+  --color-bg-3: #1F1E1E;
+  --color-text-1: #FFFFFF;
+  --color-text-2: #F0F0F0;
+  --color-text-3: #C6C6C6;
+  --color-text-4: #C4C4C4;
+  --color-blue-light: #6CACE4;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+}
+
+html,body {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+#app {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.portfolio {
+  background: var(--color-bg-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.text--color-1 {
+  color: var(--color-text-1);
+}
+
+.text--color-2 {
+  color: var(--color-text-2);
+}
+
+.text--color-3 {
+  color: var(--color-text-3);
+}
+
+.text--color-4 {
+  color: var(--color-text-4);
+}
+
+.text--color-5 {
+  color: var(--color-blue-light);
+}
+
+.container {
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  @include _1200 {
+    max-width: 108rem;
+  }
+}
+
+.title {
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.a-button__action--color-1 {
+  &:before {
+    background: linear-gradient(
+                    51.06deg,
+                    #9358f7 0.87%,
+                    #9259f7 7.31%,
+                    #8e5df6 13.75%,
+                    #8862f5 20.19%,
+                    #806bf4 26.63%,
+                    #7575f2 33.07%,
+                    #6882f0 39.51%,
+                    #5990ee 45.95%,
+                    #4a9feb 52.39%,
+                    #3bade9 58.84%,
+                    #2ebae7 65.28%,
+                    #23c4e5 71.72%,
+                    #1bcde4 78.16%,
+                    #15d2e3 84.6%,
+                    #11d6e2 91.04%,
+                    #10d7e2 97.48%
+    ) border-box;
+  }
+}
+
+.a-button__action--color-2 {
+  &:before {
+    background: linear-gradient(135deg, #6964DE 2.88%, #FCA6E9 100%) border-box;
+  }
+}
+
+.a-button__action--color-3 {
+  &:before {
+    background: linear-gradient(45.4deg, #F4426C 6.41%, #FBF2B1 98.99%) border-box;
+  }
+}
+
+.a-button__action--color-4 {
+  &:before {
+    background: linear-gradient(132.33deg, #D24074 -0.67%, #6518B4 102.54%) border-box;
+  }
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

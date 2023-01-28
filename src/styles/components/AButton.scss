@@ -1,0 +1,42 @@
+.a-button {
+  display: flex;
+
+  &__action {
+    --borderWidth: 0.2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1.6rem 2.6rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    background: var(--color-bg-1);
+    text-decoration: none;
+    border-radius: var(--borderWidth);
+    transform-style: preserve-3d;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: calc(-1 * var(--borderWidth));
+      left: calc(-1 * var(--borderWidth));
+      height: calc(100% + var(--borderWidth) * 2);
+      width: calc(100% + var(--borderWidth) * 2);
+      border-radius: calc(2 * var(--borderWidth));
+      transform: translateZ(-1px);
+      z-index: -1;
+      animation: animatedgradient 2s ease alternate infinite;
+      background-size: 300% 300%;
+    }
+
+    &__image {
+      margin-right: 1rem;
+
+      path {
+        fill: var(--color-text-1);
+      }
+
+    }
+  }
+
+}

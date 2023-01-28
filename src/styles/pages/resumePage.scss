@@ -1,0 +1,7 @@
+.resumePage {
+  padding-top: 7rem;
+  height: 100%;
+  @include _768 {
+    padding-top: 9rem;
+  }
+}

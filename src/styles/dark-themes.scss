@@ -1,0 +1,16 @@
+@at-root {
+  .dark-themes {
+    --color-bg-1: #FBFBFB;
+    --color-bg-2: #FFFFFF;
+    --color-bg-3: #1A1A1A;
+    --color-text-1: #1A1A1A;
+    --color-text-2: #1A1A1A;
+    --color-text-3: #1A1A1A;
+    --color-text-4: #1A1A1A;
+    --color-blue-light: #1F26B7;
+
+    .header__themes--dark {
+      fill: #1A1A1A;
+    }
+  }
+}

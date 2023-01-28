@@ -1,0 +1,8 @@
+.aboutPage {
+  padding-top: 7rem;
+  height: 100%;
+  background: var(--color-bg-1);
+  @include _768 {
+    padding-top: 9rem;
+  }
+}

@@ -1,0 +1,120 @@
+.header {
+  background: var(--color-bg-2);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  @include _768 {
+    padding: 2rem 0;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 5rem;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    margin: 0 3rem 0 auto;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+
+      &-link {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        text-decoration: none;
+      }
+    }
+  }
+  &__themes {
+    display: flex;
+    align-items: center;
+    justify-self: right;
+    justify-content: center;
+    background: none;
+    margin: 0 3rem 0 auto;
+    @include _768 {
+      margin-left: 0;
+    }
+    img {
+      width: 2.4rem;
+    }
+  }
+
+  &__lang {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-right: 3rem;
+  }
+
+  &__burger {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+    &__line {
+      position: absolute;
+      width: 100%;
+      height: 0.2rem;
+      background: var(--color-text-1);
+      left: 0;
+      top: 50%;
+      &:first-child {
+        top: 85%;
+      }
+
+      &:last-child {
+        top: 15%;
+      }
+    }
+  }
+
+  &__mobile {
+    &__wrap {
+      position: absolute;
+      right: -100%;
+      top: 0;
+      padding: 3rem 4rem;
+      height: 50vh;
+      background: var(--color-bg-2);
+      display: flex;
+      flex-direction: column;
+      transition: right .3s ease-in-out;
+
+      &--active {
+        right: 0;
+      }
+
+      &__close {
+        padding-bottom: 3rem;
+        font-size: 1.8rem;
+        color: var(--color-text-1);
+        margin-left: auto;
+      }
+    }
+    &__nav {
+      display: flex;
+      flex-direction: column;
+
+      &__item {
+        padding-bottom: 2rem;
+
+        &-link {
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

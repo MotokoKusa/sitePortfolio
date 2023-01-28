@@ -1,0 +1,75 @@
+.resume {
+  padding: 6rem 0;
+  @include _768 {
+    padding: 8rem 0;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 83.8rem;
+  }
+
+  &__item {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    &__head {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 1.2rem;
+      @include _768 {
+        flex-direction: row;
+      }
+      &-title {
+        font-weight: 300;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        margin-bottom: 1rem;
+        @include _768 {
+          margin-bottom: 0;
+        }
+      }
+      &-date {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &-company {
+      font-weight: 300;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      margin-bottom: 1.2rem;
+      text-decoration: none;
+    }
+  }
+  &__duties {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+
+    &__item {
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      margin-left: 2rem;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+
+
+}
