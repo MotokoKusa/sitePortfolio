@@ -19,7 +19,7 @@
             </router-link>
           </li>
         </ul>
-        <button @click="changeThemes" class="header__themes">
+        <button @click="emit('handler-change-themes')" class="header__themes">
           <svg
             width="24"
             height="24"
@@ -112,10 +112,9 @@ const clickOutsideBurger = (event: Event): void => {
   window.removeEventListener("click", clickOutsideBurger);
 };
 
-const emit = defineEmits(["handler-change-themes"]);
-const changeThemes = () => {
-  emit("handler-change-themes");
-};
+const emit = defineEmits<{
+  (eventName: "handler-change-themes"): void;
+}>();
 
 onMounted(() => {
   isMobileView.value = isMobile();
