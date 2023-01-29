@@ -145,6 +145,9 @@
       }
     ]
   },
+  "notFound": {
+    "title": "Not found page"
+  },
   "footer": {
     "text": "Contacts"
   }
